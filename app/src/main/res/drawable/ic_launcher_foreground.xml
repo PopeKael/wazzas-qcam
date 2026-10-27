@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Modified for Wazza's QCam by Warren Gerdes, 2026. See LICENSE and NOTICE. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <path android:fillColor="#EEF6FF" android:pathData="M17,25C17,17.8 22.8,12 30,12H78C85.2,12 91,17.8 91,25V83C91,90.2 85.2,96 78,96H30C22.8,96 17,90.2 17,83Z" />
+    <group android:translateY="-40">
+        <path android:fillColor="#FFFFFF" android:fillAlpha="0.86" android:pathData="M29,68C29,65.8 30.8,64 33,64H75C77.2,64 79,65.8 79,68V80C79,82.2 77.2,84 75,84H33C30.8,84 29,82.2 29,80Z" />
+        <path android:strokeColor="#101828" android:strokeWidth="4" android:strokeLineCap="round" android:fillColor="@android:color/transparent" android:pathData="M37,72H71M37,79H60" />
+    </group>
+    <group android:translateY="22">
+        <path android:fillColor="#36D399" android:pathData="M27,30C27,25.6 30.6,22 35,22H73C77.4,22 81,25.6 81,30V52C81,56.4 77.4,60 73,60H35C30.6,60 27,56.4 27,52Z" />
+        <path android:fillColor="#101828" android:pathData="M48,41C48,34.9 52.9,30 59,30C65.1,30 70,34.9 70,41C70,47.1 65.1,52 59,52C52.9,52 48,47.1 48,41Z" />
+        <path android:fillColor="#EEF6FF" android:pathData="M53,41C53,37.7 55.7,35 59,35C62.3,35 65,37.7 65,41C65,44.3 62.3,47 59,47C55.7,47 53,44.3 53,41Z" />
+        <path android:fillColor="#101828" android:pathData="M34,32H44V38H34Z" />
+        <path android:fillColor="#38BDF8" android:pathData="M78,19L92,28L78,37Z" />
+    </group>
+</vector>

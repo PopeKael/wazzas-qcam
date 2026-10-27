@@ -1,0 +1,18 @@
+# Modified for Wazza's QCam by Warren Gerdes, 2026. See LICENSE and NOTICE.
+.gradle/
+.kotlin/
+build/
+app/build/
+outputs/
+local.properties
+.tools/
+checkpoints/
+# Local intermediate emulator captures; documented review captures remain tracked.
+docs/screenshots/20-recording-panel-portrait-dark.png
+docs/screenshots/21-probe.png
+docs/screenshots/24-keyboard-before-fix.png
+docs/screenshots/27-preview-unavailable-portrait.png
+docs/screenshots/30-toolbar-portrait.png
+*.iml
+.idea/
+.DS_Store

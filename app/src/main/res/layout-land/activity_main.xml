@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Wazza's QCam by Warren Gerdes, 2026. See LICENSE and NOTICE. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101318"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/scriptPanel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/titleText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/status_ready"
+                    android:textColor="#B8C0CC"
+                    android:textSize="11sp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/themeToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:minWidth="68dp"
+                android:text="@string/theme_dark"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/scriptEdit"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_background"
+            android:fadeScrollbars="false"
+            android:gravity="top|start"
+            android:hint="@string/script_hint"
+            android:importantForAutofill="no"
+            android:inputType="textMultiLine|textCapSentences"
+            android:padding="12dp"
+            android:scrollbars="vertical"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#89929F"
+            android:textSize="28sp"
+            android:lineSpacingExtra="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cameraPanel"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="#0E1115">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.wordhint.teleprompter.AudioLevelGraphView
+                android:id="@+id/micStatusText"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:background="@drawable/camera_tool_button"
+                android:padding="4dp" />
+            <ImageButton
+                android:id="@+id/cameraFlipButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/camera_tool_button"
+                android:contentDescription="@string/switch_camera"
+                android:padding="8dp"
+                android:src="@drawable/ic_camera_flip" />
+            <TextView
+                android:id="@+id/recordTimerText"
+                android:layout_width="54dp"
+                android:layout_height="40dp"
+                android:background="@drawable/camera_tool_button"
+                android:gravity="center"
+                android:text="@string/record_timer_initial"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/scriptToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/newButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:padding="0dp"
+                android:text="@string/new_script_button"
+                android:textSize="10sp" />
+            <Button
+                android:id="@+id/pasteButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:padding="0dp"
+                android:text="@string/paste_script"
+                android:textSize="10sp" />
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:padding="0dp"
+                android:text="@string/save_script"
+                android:textSize="10sp" />
+            <Button
+                android:id="@+id/openButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:padding="0dp"
+                android:text="@string/open_script"
+                android:textSize="10sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fontToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/fontSmallerButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:padding="0dp"
+                android:text="@string/font_decrease"
+                android:textSize="16sp" />
+            <Button
+                android:id="@+id/fontLargerButton"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:minWidth="0dp"
+                android:padding="0dp"
+                android:text="@string/font_increase"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <com.wordhint.teleprompter.CameraPreviewStage
+            android:id="@+id/cameraPreviewStage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/preview_unavailable">
+            <androidx.camera.view.PreviewView
+                android:id="@+id/cameraPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:background="@android:color/transparent"
+                app:implementationMode="compatible"
+                app:scaleType="fitCenter" />
+        </com.wordhint.teleprompter.CameraPreviewStage>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/brightnessButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/camera_tool_button"
+                android:contentDescription="@string/brightness_control"
+                android:padding="12dp"
+                android:src="@drawable/ic_brightness" />
+            <ImageButton
+                android:id="@+id/openVideoButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/camera_tool_button"
+                android:contentDescription="@string/open_video"
+                android:padding="12dp"
+                android:src="@drawable/ic_open_video" />
+            <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+            <ImageButton
+                android:id="@+id/recordButton"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:background="@drawable/record_control_background"
+                android:contentDescription="@string/start_recording"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_record_idle" />
+            <Space android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1" />
+            <ImageButton
+                android:id="@+id/settingsButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/camera_tool_button"
+                android:contentDescription="@string/settings_access"
+                android:padding="12dp"
+                android:src="@drawable/ic_settings" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

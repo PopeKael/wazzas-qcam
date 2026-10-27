@@ -1,0 +1,40 @@
+name: Bug report
+description: Report a reproducible problem with Wazza's QCam.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Please leave out private scripts, personal recordings, and account details.
+  - type: input
+    id: device
+    attributes:
+      label: Phone and Android version
+      placeholder: e.g. OPPO Reno15 Pro 5G, Android 16
+    validations:
+      required: true
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the camera (front or rear), orientation, and selected recording quality where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add a screenshot only after checking it contains no private information.
+

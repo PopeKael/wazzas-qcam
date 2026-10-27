@@ -1,0 +1,24 @@
+name: Feature request
+description: Suggest a focused improvement to Wazza's QCam.
+title: "[Suggestion]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the filming or script workflow that could be improved.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would help?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Device and context
+      description: Add your phone model, Android version, and orientation if relevant.
+

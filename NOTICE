@@ -1,0 +1,17 @@
+Wazza's QCam
+Copyright 2026 Warren Gerdes
+
+This project is a modified derivative of CueCam, an Android application by
+lustsazeus-lab, Copyright 2026 lustsazeus-lab. The original project is
+available at https://github.com/lustsazeus-lab/CueCam and is licensed under
+the Apache License, Version 2.0. The upstream source tree used for this
+derivative contained no NOTICE file. The original LICENSE file is retained.
+
+Wazza's QCam contains substantial changes made under Warren Gerdes's
+direction, including its application identity, interface, script library,
+camera controls, recording workflow, video review, audio graph, and splash
+artwork. The project is not endorsed by or affiliated with the CueCam author.
+
+The branded splash and promotional artwork was supplied and approved by the
+project owner for this application and its public project page. See
+THIRD-PARTY-NOTICES.md for the artwork and dependency scope.

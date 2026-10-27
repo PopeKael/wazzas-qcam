@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Modified for Wazza's QCam by Warren Gerdes, 2026. See LICENSE and NOTICE. -->
+<resources>
+    <string name="app_name">Wazza\'s QCam</string>
+    <string name="open_camera">开摄像头</string>
+    <string name="start_recording">开始录制</string>
+    <string name="stop_recording">停止录制</string>
+    <string name="record_button_start_desc">开始录制</string>
+    <string name="record_button_stop_desc">停止录制</string>
+    <string name="preview_unavailable">预览不可用</string>
+    <string name="camera_preview_accessibility">前置摄像头镜像预览</string>
+    <string name="mic_inactive">音量表&#10;未启用</string>
+    <string name="brightness_control">显示亮度</string>
+    <string name="settings_access">设置</string>
+    <string name="status_brightness_reserved">亮度控制将在后续版本提供</string>
+    <string name="status_settings_reserved">设置入口将在后续版本提供</string>
+    <string name="theme_light">浅色</string>
+    <string name="theme_dark">深色</string>
+    <string name="switch_to_light_mode">切换到浅色模式</string>
+    <string name="switch_to_dark_mode">切换到深色模式</string>
+</resources>
